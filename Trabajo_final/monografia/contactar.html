@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psico-Arte</title>
+    <link rel="preload" href="../Freelancer/freelancer_fin/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../Freelancer/freelancer_fin/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../monografia/contactar.css" as="style">
+    <link href="../monografia/contactar.css" rel="stylesheet">
+</head>
+<style>
+ul{
+    margin-top: 8rem;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    }
+    @media (min-width: 768px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+}
+    ul li{
+    position: relative;
+    list-style: none;
+    max-width: 120rem;
+
+  }
+    ul li a{
+    position: relative;
+    font-size: 1.7rem;
+    text-decoration: none;
+    line-height: 2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+  ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid  var(--clr);
+    -webkit-text-stroke: 1px  var(--clr);
+  }
+  ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+  } 
+</style>
+<body>
+    <header>
+        <h1 class="titulo">Psico-Arte <span>Monografía</span>        
+            <div class="logotipo1">
+                <img src="../img/logo_sena-removebg-preview.png">
+                <img src="../img/logo_colegio-removebg-preview(1).png">
+            </div>
+        </h1>
+    </header>
+
+    <div class="nav-bg">
+        <ul class="navgacion-principal contenedor">
+            <li style="--clr:#0000FF">
+              <a href="../monografia/monografia.html" data-text="&nbsp;Inicio">&nbsp;Inicio&nbsp;</a>
+            </li>
+            <li style="--clr:#ff6493">
+              <a href="../monografia/historia.html" data-text="&nbsp;Historia">&nbsp;Historia&nbsp;</a>
+            </li>
+            <li style="--clr:#ffdd1c">
+              <a href="../monografia/quees.html" data-text="&nbsp;Concepto">&nbsp;Concepto&nbsp;</a>
+            </li>
+            <li style="--clr:#dc00d4">
+              <a href="../monografia/encuestas.html" data-text="&nbsp;Encuestas">&nbsp;Encuestas&nbsp;</a>
+            </li>
+            <li style="--clr:#FF0000">
+                <a href="../monografia/illustrator.html" data-text="&nbsp;Evidencias">&nbsp;Evidencias&nbsp;</a>
+            </li>
+            <li style="--clr:#40CFFF">
+                <a href="../monografia/recomendaciones.html" data-text="&nbsp;Recomendaciones">&nbsp;Recomendaciones&nbsp;</a>
+            </li>
+          </ul>
+    </div>
+    
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Bienvenido</h2> 
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>Yopal, Colombia</p>
+            </div>
+            <a class="boton" href="../monografia/contactar.html">Contactar</a>
+        </div> <!-- .contenido-hero --> 
+    </section>
+    
+    <main class="contenedor sombra">
+        <section>
+            <h2>Contacto</h2>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactános llenando todos los campos</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Email">
+                        </div>
+                
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>Todos los derechos reservados. Daniel López & Valentina Miranda</p>
+    </footer>
+
+
+
+</body>
